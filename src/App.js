@@ -2,29 +2,19 @@ import React from "react";
 
 import "./App.css";
 import Home from "./Home";
-import Question from "./Question";
+import Session from "./Session";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => (
   <Router>
     <div>
-      <ul>
-        <li>
-          {" "}
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          {" "}
-          <Link to="/question">Question link</Link>
-        </li>
-      </ul>
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/question">
-          <Question />
+        <Route exact path="/session">
+          <Session />
         </Route>
       </Switch>
     </div>

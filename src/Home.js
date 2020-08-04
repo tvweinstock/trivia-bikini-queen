@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -7,9 +8,12 @@ const Home = () => {
         <h1 className="text-2xl text-blue-700 leading-tight text-center">
           Trivia Bikini Queens!!!
         </h1>
-        <h2 className="text-base text-blue-900 leading-normal text-center">
-          Expanding our minds with awesome trivia i think
-        </h2>
+        <Link
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          to="/session"
+        >
+          Start
+        </Link>
       </div>
     </div>
   );
